@@ -1,0 +1,139 @@
+// -*- mode: json -*-
+
+{
+	"layer": "top",
+	"position": "top",
+
+
+  "modules-left": [
+	"clock#1",
+	"clock#2",
+	"clock#3",
+	"custom/right-arrow-dark",
+  "custom/right-arrow-light",
+  "pulseaudio",
+  "custom/right-arrow-dark",
+  "custom/right-arrow-light",
+  "backlight",
+  "custom/right-arrow-dark",
+	],
+  "modules-center": [
+    "custom/left-arrow-dark",
+		"hyprland/workspaces",
+		"custom/right-arrow-dark"
+	],
+	"modules-right": [
+		"custom/left-arrow-dark",
+		"battery",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"cpu",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"memory",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"disk",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"network"
+	],
+
+	"clock#1": {
+		"format": "{:%a}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%m-%d}",
+		"tooltip": false
+	},
+
+  "custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} {volume}%",
+		"format-muted": "    ",
+		"format-icons": {
+			"headphones": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pavucontrol",
+    "max-volume": 153
+	},
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": [
+			"", "", "", "", "", ""
+		],
+  },
+  "battery": {
+	  "states": {
+		  "good": 80,
+		  "warning": 30,
+		  "critical": 15,
+    },
+    "format": "{icon} {capacity}%",
+	  "format-icons": [
+			"",
+		  "",
+		  "",
+		  "",
+			""
+		],
+    "format-charging": " {capacity}%",
+    "interval": 2
+	},
+	"cpu": {
+		"interval": 5,
+		"format": " {usage:2}%",
+    "on-click": "gotop",
+    "interval": 2
+	},
+	"memory": {
+		"interval": 5,
+		"format": " {}%",
+    "on-click": "gotop",
+    "interval": 2
+	},
+		"disk": {
+		"interval": 5,
+		"format": "  {percentage_used:2}% ",
+		"path": "/",
+    "on-click": "thunar"
+	},
+	"network": {
+		"format-wifi": "󰖩",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󱚼",
+    "on-click": "nmtui"
+	},
+}

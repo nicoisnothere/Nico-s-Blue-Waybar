@@ -1,0 +1,101 @@
+* {
+	font-size: 16px;
+	font-family: FiraCode;
+}
+
+window#waybar {
+	background-color: rgba(0, 24, 74, 0.6);
+}
+
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+	color: #00205c;
+	font-size: 20px;
+  padding-top: 1px;
+}
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+	color: #00205c;
+	font-size: 23px;
+  padding-top: 1px;
+}
+
+#clock.1,
+#clock.2,
+#clock.3,
+#backlight,
+#pulseaudio,
+#workspaces,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network {
+	background: #00205c;
+}
+
+#workspaces button:nth-child(8n+1) { color: #ff0019; }
+#workspaces button:nth-child(8n+2) { color: #ff0041; }
+#workspaces button:nth-child(8n+3) { color: #ff0069; }
+#workspaces button:nth-child(8n+4) { color: #ff0091; }
+#workspaces button:nth-child(8n+5) { color: #ff00b9; }
+#workspaces button:nth-child(8n+6) { color: #ff0091; }
+#workspaces button:nth-child(8n+7) { color: #ff0069; }
+#workspaces button:nth-child(8n+8) { color: #ff0041; }
+
+#workspaces button {
+	padding: 0 2px;
+}
+#workspaces button.focused {
+	color: #001e54;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #001e54;
+	border: #001e54;
+	padding: 0 3px;
+}
+
+#clock.1 {
+  color: #11a0df;
+}
+#clock.2 {
+  color: #2180cf;
+}
+#clock.3 {
+  color: #3160bf;
+}
+#pulseaudio {
+	color: #4140af;
+}
+#backlight {
+  color: #51209f;
+}
+#battery {
+	color: #51209f;
+}
+#cpu {
+	color: #4140af;
+}
+#memory {
+	color: #3160bf;
+}
+#disk {
+	color: #2180cf;
+}
+#network {
+  color: #11a0df;
+}
+
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#network {
+  padding: 0 10px;
+}
