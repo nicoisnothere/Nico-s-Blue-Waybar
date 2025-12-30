@@ -1,2 +1,3 @@
-# Nico-s-Blue-Waybar
-Blue themed Waybar preset inspired by [cjbassi's configuration](https://github.com/cjbassi/config/tree/master/.config/waybar)
+# Nico's Blue Waybar
+Blue themed Waybar preset inspired by [cjbassi's configuration](https://github.com/cjbassi/config/tree/master/.config/waybar)#
+### Example screenshot
